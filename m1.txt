@@ -1,0 +1,39 @@
+测试文档1
+apt-mirror
+apt-mirror-api-0.1
+
+xom
+xom-1.2.11
+
+
+
+
+mvn help:describe-Dplugin = org.apache.maven.plugins:maven-source-plugin:2.1.1 -Ddetail
+
+mvn help:describe -Dplugin = org.apache.maven.plugins:maven-compiler-plugin:3.10.1
+
+<settings>
+	<pluginGroups>
+		<pluginGroup>com.mycustom.plugins</pluginGroup>
+	</plugingroups>
+</settings>
+
+
+<plugins>
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-shade-plugin</artifactId>
+	    <version>3.2.1</version>
+		<executions>
+			<execution>
+				<phase>package</phase>
+				<goals>
+					<goal>shade</goal>
+				</goals>
+				<configuration>
+	                ...
+				</configuration>
+			</execution>
+		</executions>
+	</plugin>
+</plugins>
